@@ -2,7 +2,8 @@ def study_schedule(permanence_period, target_time):
     """
     @param permanence_period `tuple` `list`
     @param target_time `number`
-    iterates over permanence_period tuples and sums if target_time is between tuple numbers
+    iterates over permanence_period tuples
+    sums if target_time is between tuple numbers
     Returns hits `number`
     """
     hit = 0
