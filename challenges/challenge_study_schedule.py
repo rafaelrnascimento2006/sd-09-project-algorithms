@@ -1,3 +1,11 @@
 def study_schedule(permanence_period, target_time):
-    """ Faça o código aqui. """
-    # VQV!
+    quantity_of_students = 0
+    if not target_time or type(target_time) != int:
+        return None
+    for period in permanence_period:
+        entrance, exits = period
+        if type(entrance) != int or type(exits) != int:
+            return None
+        if entrance <= target_time <= exits:
+            quantity_of_students += 1
+    return quantity_of_students
