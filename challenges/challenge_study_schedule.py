@@ -6,8 +6,6 @@ def study_schedule(permanence_period, target_time):
         a, b = item
         if a is None or b is None:
             return None
-        if type(a) is str or type(b) is str:
-            return None
         if target_time >= a and target_time <= b:
             counter += 1
     return counter
