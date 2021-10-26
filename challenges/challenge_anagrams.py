@@ -13,19 +13,19 @@ def is_anagram(first_string, second_string):
         prev_index_first = index - 1
         prev_index_second = index - 1
 
-        while True:
-            if next_elem_first < first_string[prev_index_first] and prev_index_first >= 0:
-                first_string[prev_index_first +
-                             1] = first_string[prev_index_first]
-                prev_index_first -= 1
+        while prev_index_first >= 0 and prev_index_second >= 0:
+            if next_elem_first < first_string[prev_index_first]:
+                first_string[
+                    prev_index_first + 1
+                ] = first_string[prev_index_first]
 
-            elif next_elem_second < second_string[prev_index_second] and prev_index_second >= 0:
-                second_string[prev_index_second +
-                              1] = second_string[prev_index_second]
+            elif next_elem_second < second_string[prev_index_second]:
+                second_string[
+                    prev_index_second + 1
+                ] = second_string[prev_index_second]
+
                 prev_index_second -= 1
-
-            else:
-                break
+                prev_index_first -= 1
 
         first_string[prev_index_first + 1] = next_elem_first
         second_string[prev_index_second + 1] = next_elem_second
