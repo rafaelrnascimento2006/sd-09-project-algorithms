@@ -1,68 +1,18 @@
-### Termos e acordos
-
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do
-Manual da Pessoa Estudante da Trybe.
-
-# Boas vindas ao repositório do projeto de Algorithms!
-
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
----
-# Sumário
-
-- [Boas vindas ao repositório do projeto de Algorithms!](#boas-vindas-ao-repositório-do-projeto-de-algorithms)
-- [Sumário](#sumário)
-- [Habilidades](#habilidades)
-  - [Entregáveis](#entregáveis)
-    - [⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️](#️-é-importante-que-seus-arquivos-tenham-exatamente-estes-nomes-️)
-  - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
-  - [Desenvolvimento](#desenvolvimento)
-    - [Data de Entrega](#data-de-entrega)
-  - [Instruções para entregar seu projeto:](#instruções-para-entregar-seu-projeto)
-    - [ANTES DE COMEÇAR A DESENVOLVER:](#antes-de-começar-a-desenvolver)
-    - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-  - [Linter](#linter)
-  - [Testes](#testes)
-  - [Requisitos do projeto](#requisitos-do-projeto)
-      - [1 - Número de estudantes estudando no mesmo horário (Algoritmo de busca)](#1---número-de-estudantes-estudando-no-mesmo-horário-algoritmo-de-busca)
-      - [2 - Palíndromos (Recursividade)](#2---palíndromos-recursividade)
-      - [3 - Anagramas (Algoritmo de ordenação)](#3---anagramas-algoritmo-de-ordenação)
-    - [Requisitos bônus:](#requisitos-bônus)
-      - [4 - Encontrando números repetidos (Algoritmo de busca)](#4---encontrando-números-repetidos-algoritmo-de-busca)
-      - [5 - Palíndromos (Iteratividade)](#5---palíndromos-iteratividade)
-    - [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
-    - [Revisando um pull request](#revisando-um-pull-request)
-- [Avisos Finais](#avisos-finais)
-
-    `Requisitos obrigatórios:`
-    - [1 - Número de estudantes estudando no mesmo horário (Algoritmo de busca)](#1---número-de-estudantes-estudando-no-mesmo-horário-algoritmo-de-busca)
-    - [2 - Palíndromos (Recursividade)](#2---palíndromos-recursividade)
-    - [3 - Anagramas (Algoritmo de ordenação)](#3---anagramas-algoritmo-de-ordenação)
-
-    `Requisitos bônus:`
-    - [4 - Encontrando números repetidos (Algoritmo de busca)](#4---encontrando-números-repetidos-algoritmo-de-busca)
-    - [5 - Palíndromos (Iteratividade)](#5---palíndromos-iteratividade)
-- [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
-- [Revisando um pull request](#revisando-um-pull-request)
-- [Avisos Finais](#avisos-finais)
-
 # Habilidades
 
-  - Estrutura de dados
+- Estrutura de dados
 
-  - Complexidade de algoritimos
+- Complexidade de algoritimos
 
-  - Capacidade de interpretação do problema;
+- Capacidade de interpretação do problema;
 
-  - Capacidade de resolução do problema, de forma otimizada;
-  
-  - Analisar corretamente a ordem de complexidade de um algoritmo.
+- Capacidade de resolução do problema, de forma otimizada;
 
-  - Recursividade
+- Analisar corretamente a ordem de complexidade de um algoritmo.
 
-  - Algoritmos de ordenação e algoritmos de busca
+- Recursividade
+
+- Algoritmos de ordenação e algoritmos de busca
 
 ---
 
@@ -84,15 +34,15 @@ Para fixar os conteúdos de algoritmos e estrutura de dados vistos até agora, v
 
 Pessoas desenvolvedoras de software, além de serem muito boas em implementações, devem, também, ser boas resolvendo problemas e otimizando algoritmos. No projeto de hoje, vamos treinar, ainda mais, a sua capacidade de resolução de problemas e otimização de código, que envolve algumas habilidades:
 
-  - Lógica;
+- Lógica;
 
-  - Capacidade de interpretação do problema;
+- Capacidade de interpretação do problema;
 
-  - Capacidade de interpretação de um código legado;
+- Capacidade de interpretação de um código legado;
 
-  - Capacidade de resolução do problema, de forma otimizada;
+- Capacidade de resolução do problema, de forma otimizada;
 
-  - Resolver o problemas/Otimizar algoritmos mesmo sob pressão.
+- Resolver o problemas/Otimizar algoritmos mesmo sob pressão.
 
 Tendo essas habilidades descritas acima, junto com algumas outras, farão de você uma pessoa desenvolvedora que terá muita facilidade em diversas situações problemáticas do dia-a-dia.
 
@@ -109,11 +59,11 @@ Este repositório já contém um _template_ com a estrutura de diretórios e arq
 ```md
 .
 ├── challenges
-│   ├── challenge_anagrams.py
-│   ├── challenge_find_the_duplicate.py
-│   ├── challenge_palindromes_iterative.py
-│   ├── challenge_palindromes_recursive.py
-│   └── challenge_study_schedule.py
+│ ├── challenge_anagrams.py
+│ ├── challenge_find_the_duplicate.py
+│ ├── challenge_palindromes_iterative.py
+│ ├── challenge_palindromes_recursive.py
+│ └── challenge_study_schedule.py
 ├── README.md
 ├── requirements.txt
 └── setup.cfg
@@ -151,8 +101,8 @@ $ python3 nome_do_arquivo.py
 
 ### Data de Entrega
 
-  - Serão `2` dias de projeto.
-  - Data de entrega para avaliação final do projeto: `03/11/2021 - 14:00h`.
+- Serão `2` dias de projeto.
+- Data de entrega para avaliação final do projeto: `03/11/2021 - 14:00h`.
 
 ---
 
@@ -211,13 +161,13 @@ $ python3 nome_do_arquivo.py
 
 ### Durante o desenvolvimento
 
-* ⚠ **PULL REQUESTS COM ISSUES NO LINTER NÃO SERÃO AVALIADAS, ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠
+- ⚠ **PULL REQUESTS COM ISSUES NO LINTER NÃO SERÃO AVALIADAS, ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠
 
-* Faça `commits` das alterações que você fizer no código regularmente
+- Faça `commits` das alterações que você fizer no código regularmente
 
-* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
+- Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
 
-* Os comandos que você utilizará com mais frequência são:
+- Os comandos que você utilizará com mais frequência são:
   1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
   2. `git add` _(para adicionar arquivos ao stage do Git)_
   3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
@@ -232,7 +182,7 @@ Para garantir a qualidade do código, vamos utilizar neste projeto o linter `Fla
 Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível
 e de fácil manutenção! Para rodá-lo localmente no projeto, execute o comandos abaixo:
 
-  ```bash
+```bash
 python3 -m flake8
 ```
 
@@ -280,14 +230,15 @@ _Dica:_ Quando vou saber qual o melhor horário? Quando o contador retornado pel
 ```md
 # Nos arrays temos 6 estudantes
 
-# estudante             1       2       3       4       5       6
+# estudante 1 2 3 4 5 6
+
 permanence_period = [(2, 2), (1, 2), (2, 3), (1, 5), (4, 5), (4, 5)]
 
-target_time = 5  # saída: 3, pois a quarta, a quinta e a sexta pessoa estudante ainda estavam estudando nesse horário.
-target_time = 4  # saída: 3, pois a quinta e a sexta pessoa estudante começaram a estudar nesse horário e a quarta ainda estava estudando.
-target_time = 3  # saída: 2, pois a terceira e a quarta pessoa estudante ainda estavam estudando nesse horário.
-target_time = 2  # saída: 4, pois a primeira, a segunda, a terceira e a quarta pessoa estudante estavam estudando nesse horário.
-target_time = 1  # saída: 2, pois a segunda e a quarta pessoa estudante estavam estudando nesse horário.
+target_time = 5 # saída: 3, pois a quarta, a quinta e a sexta pessoa estudante ainda estavam estudando nesse horário.
+target_time = 4 # saída: 3, pois a quinta e a sexta pessoa estudante começaram a estudar nesse horário e a quarta ainda estava estudando.
+target_time = 3 # saída: 2, pois a terceira e a quarta pessoa estudante ainda estavam estudando nesse horário.
+target_time = 2 # saída: 4, pois a primeira, a segunda, a terceira e a quarta pessoa estudante estavam estudando nesse horário.
+target_time = 1 # saída: 2, pois a segunda e a quarta pessoa estudante estavam estudando nesse horário.
 
 Para esse exemplo, depois de rodar a função para todos esses `target_times`, julgamos que o melhor horário é o `2`, pois esse retornou `4`, já que 4 estudantes estavam presentes nesse horário!
 ```
@@ -308,7 +259,7 @@ Para esse exemplo, depois de rodar a função para todos esses `target_times`, j
 
 - 1.2 - Retorne `None` se em `permanence_period` houver alguma entrada inválida
 
-- 1.3 - Retorne `None` se  `target_time` recebe um valor vazio
+- 1.3 - Retorne `None` se `target_time` recebe um valor vazio
 
 - 1.4 - A função poderá, em menos que 0.02s, ser executada 10.000 vezes para uma entrada pequena (tempo da execução do avaliador no Pull Request)
 
@@ -322,18 +273,23 @@ _Curiosidade:_ Existem frases palíndromas também, porém nesse exercício irem
 
 ```md
 word = "ANA"
+
 # saída: True
 
 word = "SOCOS"
+
 # saída: True
 
 word = "REVIVER"
+
 # saída: True
 
 word = "COXINHA"
+
 # saída: False
 
 word = "AGUA"
+
 # saída: False
 ```
 
@@ -366,24 +322,28 @@ Mas o que é um anagrama? Vamos ver sua definição para entendermos melhor:
 ```md
 first_string = "amor"
 second_string = "roma"
-# saída: True
-# Explicação: Nesse caso o retorno da função é True, pois a palavra "roma" é um anagrama de "amor".
 
+# saída: True
+
+# Explicação: Nesse caso o retorno da função é True, pois a palavra "roma" é um anagrama de "amor".
 
 first_string = "pedra"
 second_string = "perda"
-# saída: True
-# Explicação: Nesse caso o retorno também é True. Na palavra "pedra", trocamos o "d" de lugar com o "r" e formamos "perda", sendo assim um anagrama.  
 
+# saída: True
+
+# Explicação: Nesse caso o retorno também é True. Na palavra "pedra", trocamos o "d" de lugar com o "r" e formamos "perda", sendo assim um anagrama.
 
 first_string = "pato"
 second_string = "tapo"
+
 # saída: True
 
-
 # Agora vamos pra um exemplo onde não existe um anagrama
+
 first_string = "coxinha"
 second_string = "empada"
+
 # saída: False
 ```
 
@@ -423,20 +383,26 @@ Retorne apenas um número duplicado em `nums`.
 
 ```md
 nums = [1, 3, 4, 2, 2]
+
 # saída: 2
 
 nums = [3, 1, 3, 4, 2]
+
 # saída: 3
 
 nums = [1, 1]
+
 # saída: 1
 
 nums = [1, 1, 2]
+
 # saída: 1
 
 nums = [3, 1, 2, 4, 6, 5, 7, 7, 7, 8]
+
 # saída: 7
 ```
+
 - Caso não passe nenhum valor ou uma string ou não houver números repetidos retorne false;
 
 - Este requisito será testado executando 10.000 vezes sobre uma mesma entrada. Tais execuções, **no avaliador**, devem acontecer integralmente em menos de 0.01 segundos. O tempo de execução do código na sua máquina pode variar em relação ao avaliador, então é importante levar somente ele em consideração.
@@ -473,7 +439,7 @@ _Dica:_ Ordene o array.
 
 #### 5 - Palíndromos (Iteratividade)
 
-Resolva o mesmo problema, apresentado no [requisito dois](####-2---Palíndromos-(Recursividade)), porém dessa vez utilizando a solução iterativa.
+Resolva o mesmo problema, apresentado no [requisito dois](<####-2---Palíndromos-(Recursividade)>), porém dessa vez utilizando a solução iterativa.
 
 - Este requisito será testado executando 10.000 vezes sobre uma mesma entrada. Tais execuções, **no avaliador**, devem acontecer integralmente em menos de 0.005 segundos. O tempo de execução do código na sua máquina pode variar em relação ao avaliador, então é importante levar somente ele em consideração.
 
@@ -499,10 +465,10 @@ Resolva o mesmo problema, apresentado no [requisito dois](####-2---Palíndromos-
 
 Para **"entregar"** seu projeto, siga os passos a seguir:
 
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-09`
+- Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
+  - No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
+  - No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
+  - No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-09`
 
 Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
