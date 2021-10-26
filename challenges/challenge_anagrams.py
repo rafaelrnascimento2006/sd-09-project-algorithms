@@ -1,57 +1,27 @@
+def sort_array(array):
+    for index in range(len(array)):
+        prev = index
+
+        for curr in range(index + 1, len(array)):
+            if array[curr] < array[prev]:
+                prev = curr
+
+        array[prev], array[index] = array[index], array[prev]
+
+    return array
+
+
 def is_anagram(first_string, second_string):
     """ Faça o código aqui. """
     if len(first_string) != len(second_string):
         return False
 
-    first_string = list(first_string)
-    second_string = list(second_string)
-
-    for index in range(1, len(first_string)):
-        next_elem_first = first_string[index]
-        next_elem_second = second_string[index]
-
-        prev_index_first = index - 1
-        prev_index_second = index - 1
-
-        while prev_index_first >= 0 and prev_index_second >= 0:
-            if next_elem_first < first_string[prev_index_first]:
-                first_string[
-                    prev_index_first + 1
-                ] = first_string[prev_index_first]
-
-            elif next_elem_second < second_string[prev_index_second]:
-                second_string[
-                    prev_index_second + 1
-                ] = second_string[prev_index_second]
-
-                prev_index_second -= 1
-                prev_index_first -= 1
-
-        first_string[prev_index_first + 1] = next_elem_first
-        second_string[prev_index_second + 1] = next_elem_second
+    first_string = sort_array(list(first_string))
+    second_string = sort_array(list(second_string))
 
     # print(first_string)
     # print(second_string)
-
-    # while prev_index_second >= 0 and next_elem_second < second_string[prev_index_second]:
-    #     second_string[prev_index_second +
-    #                   1] = second_string[prev_index_second]
-    #     prev_index_second -= 1
-
-    # second_string[prev_index_second + 1] = next_elem_second
-
-    # for index in range(1, len(second_string)):
-    #     next_elem_second = second_string[index]
-
-    #     prev_index = index - 1
-
-    #     while prev_index >= 0 and next_elem_second < second_string[prev_index]:
-    #         second_string[prev_index + 1] = second_string[prev_index]
-    #         prev_index -= 1
-
-    #     second_string[prev_index + 1] = next_elem_second
-
     return first_string == second_string
 
 
-is_anagram('tsete', 'setet')
+print(is_anagram('tsete', 'setet'))
