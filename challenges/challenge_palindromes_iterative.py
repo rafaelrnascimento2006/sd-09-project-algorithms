@@ -1,2 +1,3 @@
 def is_palindrome_iterative(word):
-    """ Faça o código aqui. """
+    is_palindrome = '# Iniciando projeto'
+    return is_palindrome
