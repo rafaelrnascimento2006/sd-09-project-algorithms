@@ -6,5 +6,7 @@ def study_schedule(permanence_period, target_time):
         if begin and end:
             if begin <= target_time <= end:
                 counter += 1
+        else:
+            return None
     return counter
                 
