@@ -1,7 +1,11 @@
+import math
+
+
 def is_palindrome_iterative(word):
     if word == '':
         return False
-    reversed_word = ''
-    for index in range((len(word) - 1), -1, -1):
-        reversed_word += word[index]
-    return (word == reversed_word)
+    mid = math.ceil(len(word) / 2)
+    for index in range(0, mid):
+        if word[index] != word[-abs(index + 1)]:
+            return False
+    return True
