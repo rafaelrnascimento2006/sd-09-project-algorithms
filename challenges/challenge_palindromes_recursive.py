@@ -15,5 +15,5 @@ def _is_palindrome_recursive(word):
     return _is_palindrome_recursive(word[1:]) + word[0]
 
 
-print(is_palindrome_recursive(""))
+# print(is_palindrome_recursive(""))
 # https://www.ti-enxame.com/pt/python/inverter-uma-string-sem-usar-reversed-ou-1/1042409120/
