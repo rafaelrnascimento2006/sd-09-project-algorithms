@@ -1,13 +1,13 @@
-def merge_sort(word):
+def merge_sort(value):
 
-    if len(word) <= 1:
-        return word
+    if len(value) <= 1:
+        return value
 
-    mid = len(word) // 2
+    mid = len(value) // 2
 
-    left, right = merge_sort(word[:mid]), merge_sort(word[mid:])
+    left, right = merge_sort(value[:mid]), merge_sort(value[mid:])
 
-    return merge(left, right, list(word))
+    return merge(left, right, list(value))
 
 
 def merge(left, right, merged):
