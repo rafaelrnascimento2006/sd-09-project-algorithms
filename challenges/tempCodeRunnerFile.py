@@ -1,1 +1,0 @@
-print(word_inverte)
