@@ -4,3 +4,4 @@ def is_anagram(first_string, second_string):
         return False
     else:
         return sorted(first_string) == sorted(second_string)
+     # poderiam ser mais claros em dizer que não poderia usar o sort padrão né?
