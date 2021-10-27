@@ -1,4 +1,7 @@
-def find_duplicate(nums):
+from challenges.floyds_tortoise_and_hare import floyds_tortoise_and_hare
+
+
+def slow_find_duplicate(nums):
     if len(nums) < 2:
         return False
     try:
@@ -15,3 +18,14 @@ def find_duplicate_algorithm(nums):
             if i != j and nums[i] == nums[j]:
                 return nums[i]
     return False
+
+
+def find_duplicate(nums):
+    if len(nums) < 2:
+        return False
+    if len(nums) == 2 and nums[0] != nums[1]:
+        return False
+    for num in nums:
+        if num < 0:
+            return False
+    return floyds_tortoise_and_hare(nums)
