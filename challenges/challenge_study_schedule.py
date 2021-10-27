@@ -15,14 +15,14 @@ def study_schedule(permanence_period, target_time):
     if (inicial[0] <= target_time <= final[])
     """
     if target_time is None or type(target_time) is not int:
-        print(type(target_time))
         return None
     qtd_students = 0
     for item in permanence_period:
         if (item[0] is None or item[1] is None) or (
             type(item[0]) is not int or type(item[1]) is not int
         ):
-            return None
+            qtd_students = None
+            break
         if item[0] <= target_time <= item[1]:
             qtd_students += 1
     return qtd_students
