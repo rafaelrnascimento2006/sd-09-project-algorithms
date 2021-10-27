@@ -7,19 +7,21 @@ def is_anagram(first_string, second_string):
         sndlist=list(second_string)
         # https://panda.ime.usp.br/panda/static/pythonds_pt/05-OrdenacaoBusca/OBubbleSort.html
         # aproveitando que o python já entende o código ASCII para ordernar alfabeticamente
-        for each_letter in range(len(fstlist)-1,0,-1):
-            for i in range(each_letter):
-                if fstlist[i]>fstlist[i+1]:
-                    temp = fstlist[i]
-                    fstlist[i] = fstlist[i+1]
-                    fstlist[i+1] = temp
-        for each_letter in range(len(sndlist)-1,0,-1):
-            for i in range(each_letter):
-                if sndlist[i]>sndlist[i+1]:
-                    temp = sndlist[i]
-                    sndlist[i] = sndlist[i+1]
-                    sndlist[i+1] = temp
+        def shortBubbleSort(thelist):
+            letter_will_move = True
+            all_letters = len(thelist)-1
+            while all_letters > 0 and letter_will_move:
+                letter_will_move = False
+                for letter_index in range(all_letters):
+                    if thelist[letter_index]>thelist[letter_index+1]:
+                        letter_will_move = True
+                        temp = thelist[letter_index]
+                        thelist[letter_index] = thelist[letter_index+1]
+                        thelist[letter_index+1] = temp
+                all_letters = all_letters-1
+            all_letters = len(thelist)-1
+        
+    shortBubbleSort(fstlist)
+    shortBubbleSort(sndlist)
 
     return fstlist == sndlist
-
-print(is_anagram('amor', 'roma'))
