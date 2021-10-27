@@ -14,7 +14,8 @@ def is_anagram(first_string, second_string):
     return resp
 
 
-# Código baseado no quicksort do site
+#  Código baseado no quicksort do site
+#  https://panda.ime.usp.br/panda/static/pythonds_pt/05-OrdenacaoBusca/OQuickSort.html
 def quickSort(string):
     quickSortHelper(string, 0, len(string) - 1)
 
