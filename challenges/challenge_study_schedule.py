@@ -5,7 +5,7 @@ def study_schedule(permanence_period, target_time):
     if target_time is None:
         return None
     for [horario1, horario2] in permanence_period:
-        if (horario1 or horario2) is None:
+        if not (horario1 or horario2):
             return None
         if horario1 <= target_time <= horario2:
             matchHorario += 1
