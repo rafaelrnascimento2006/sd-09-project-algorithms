@@ -1,12 +1,12 @@
 def study_schedule(permanence_period, target_time):
-    if permanence_period == None or target_time == None:
+    if permanence_period is None or target_time is None:
         return None
 
     counter = 0
-    for time_in, time_out in permanence_period:
-        if isinstance(time_in, int) is False or isinstance(time_out, int) is False:
-            return None
-        if time_in <= target_time <= time_out:
+    for time_in, out in permanence_period:
+        if isinstance(time_in, int) is False or isinstance(out, int) is False:
+                return None
+        if time_in <= target_time <= out:
             counter += 1
     return counter
 
