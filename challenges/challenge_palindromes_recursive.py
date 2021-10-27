@@ -1,5 +1,5 @@
 def is_palindrome_recursive(word, low_index, high_index):
-    # INPUT: string, int, int 
+    # INPUT: string, int, int
     # OUTPUT: boolean
 
     # determinar caso base
@@ -11,8 +11,4 @@ def is_palindrome_recursive(word, low_index, high_index):
         return False
     if high_index == (len(word)//2):
         return True
-    print('\n==========  DEBUG  ==========')
-    print(f'\n  word: {word}')
-    print(f'\n  low-index: {word[low_index]} = high-index: {word[high_index]}')
-    print('\n=============================')
     return is_palindrome_recursive(word, low_index+1, high_index-1)
