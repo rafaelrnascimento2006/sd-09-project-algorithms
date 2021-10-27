@@ -10,8 +10,3 @@ def study_schedule(permanence_period, target_time):
         if horario1 <= target_time <= horario2:
             matchHorario += 1
     return matchHorario
-
-# arrTuple = [(80, 80), (80, 80), (80, 90), (1, 5), (4, 5), (4, 5)]
-# hor = 80
-
-# print(study_schedule(arrTuple, hor)) # esperado 3
