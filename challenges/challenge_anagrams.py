@@ -1,4 +1,4 @@
-from challenges.merge_sort import merge_sort
+from utils.sort_algorithms.merge_sort import merge_sort
 
 
 def is_anagram(first_string, second_string):
