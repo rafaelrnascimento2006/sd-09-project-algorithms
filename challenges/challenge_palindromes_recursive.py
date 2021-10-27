@@ -3,9 +3,8 @@ def is_palindrome_recursive(word, low_index, high_index):
     if low_index < len(word) and high_index < len(word):
         if (low_index != high_index) and (word[low_index] == word[high_index]):
             if is_palindrome_recursive(word, low_index + 1, high_index - 1):
-                is_palidrome = True
-            else:
-                is_palidrome = False 
+                return True
+            return False 
         else:
             if word[low_index] != word[high_index] or len(word) == 0:
                 is_palidrome = False
