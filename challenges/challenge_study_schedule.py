@@ -1,20 +1,17 @@
 def study_schedule(permanence_period, target_time):
+
     """ Faça o código aqui. """
-    # qtas vezes o target time foi encontrado entre o periodo de entrada e saída
     matchHorario = 0
     if target_time is None:
         return None
-    
     for [horario1, horario2] in permanence_period:
         if (horario1 or horario2) is None:
             return None
-            # target time precisa estar entre os horários para dar o match
         if horario1 <= target_time <= horario2:
             matchHorario += 1
     return matchHorario
 
-	
-arrTuple = [(80, 80), (80, 80), (80, 90), (1, 5), (4, 5), (4, 5)]
-hor = 80
+# arrTuple = [(80, 80), (80, 80), (80, 90), (1, 5), (4, 5), (4, 5)]
+# hor = 80
 
-print(study_schedule(arrTuple, hor))
+# print(study_schedule(arrTuple, hor)) # esperado 3
