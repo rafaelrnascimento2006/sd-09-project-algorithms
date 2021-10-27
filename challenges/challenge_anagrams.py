@@ -15,5 +15,7 @@ def is_anagram(first_string, second_string):
             return counter
     fsthash = build_counters(first_string)
     sndhash = build_counters(second_string)
+    print(fsthash, sndhash)
 
     return fsthash == sndhash
+    
