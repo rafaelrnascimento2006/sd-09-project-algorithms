@@ -3,8 +3,8 @@ def is_palindrome_recursive(word, low_index, high_index):
     # OUTPUT: boolean
 
     # determinar caso base
-    #       CASO 1: se string vazia ou se os caracteres forem diferentes (nao e palidrome)
-    #       CASO 2: se chegar no meio da string e os caracteres forem iguais (e palindrome)
+    #   CASO 1: se a string for vazia OU se os caracteres forem diferentes
+    #   CASO 2: se chegar no meio da string e as letras forem iguais
     # chamar a propria funcao atualizando os indices
 
     if len(word) == 0 or word[low_index] != word[high_index]:
