@@ -11,7 +11,7 @@ def find_duplicate_algorithm(nums):
     for i in range(len(nums)):
         if int(nums[i]) < 0:
             return False
-        for j in range(len(nums[:i])):
+        for j in range(len(nums[slice(i)])):
             if nums[i] == nums[j]:
                 return nums[i]
     return False
