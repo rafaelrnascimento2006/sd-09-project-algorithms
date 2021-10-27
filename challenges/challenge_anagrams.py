@@ -1,2 +1,5 @@
 def is_anagram(first_string, second_string):
-    """Yee"""
+    """"""
+    if len(first_string) != len(second_string):
+        return False
+    return True
