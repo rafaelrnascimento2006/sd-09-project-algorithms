@@ -1,2 +1,5 @@
 def is_palindrome_iterative(word):
-    """ Faça o código aqui. """
+    if len(word) == 0:
+        return False
+    teste = word[::-1]
+    return teste == word
