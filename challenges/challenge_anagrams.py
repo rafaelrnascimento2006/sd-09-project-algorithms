@@ -8,6 +8,7 @@ def is_anagram(first_string, second_string):
         return False
     return True
 
+
 def quicksort(string):
     if len(string) <= 1:
         return string
