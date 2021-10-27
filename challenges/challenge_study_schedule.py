@@ -1,6 +1,3 @@
-from typing import Counter
-
-
 def study_schedule(permanence_period, target_time):
     if permanence_period == None or target_time == None:
         return None
