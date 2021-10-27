@@ -32,7 +32,7 @@ def basics_requeriments(first_string, second_string):
 
 
 def is_anagram(first_string, second_string):
-    if basics_requeriments(first_string, second_string) == False:
+    if basics_requeriments(first_string, second_string) is False:
         return False
 
     first_array = list(first_string)
