@@ -1,14 +1,16 @@
 def study_schedule(permanence_period, target_time):
     """ Faça o código aqui. """
-    matchHorario = 0 # quantas vezes o target time foi encontrado entre o periodo de entrada e saída
+    # qtas vezes o target time foi encontrado entre o periodo de entrada e saída
+    matchHorario = 0
     if target_time is None:
         return None
     
     for [horario1, horario2] in permanence_period:
         if (horario1 or horario2) is None:
             return None
-        if horario1 <= target_time <= horario2: # target time precisa estar entre os horários para dar o match
-            matchHorario += 1 # toda vez que der match do target time entre a hora que o aluno entrou e a hora que saiu 
+            # target time precisa estar entre os horários para dar o match
+        if horario1 <= target_time <= horario2:
+            matchHorario += 1
     return matchHorario
 
 	
