@@ -1,2 +1,5 @@
+from collections import Counter
+
+
 def is_anagram(first_string, second_string):
-    """ Faça o código aqui. """
+    return Counter(list(first_string)) == Counter(list(second_string))
