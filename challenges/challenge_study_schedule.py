@@ -17,4 +17,14 @@ def study_schedule(permanence_period, target_time):
                 SE tiver no intervalo SOMAR + 1
         retornar a quantidade de alunos presentes no TARGET_TIME
     """
+    counter = 0
+
+    for student in permanence_period:
+        if target_time >= student[0] and target_time <= student[1]:
+            counter += 1
     
+    print('\n==========  DEBUG  ==========')
+    print(f'\n  [counter] > {counter}')
+    print('\n=============================')
+
+    return counter
