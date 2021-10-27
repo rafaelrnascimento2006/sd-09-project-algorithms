@@ -14,5 +14,6 @@ def is_anagram(first_string, second_string):
         # https://stackoverflow.com/questions/1228299/changing-one-character-in-a-string
         letter_position = second_string.find(letter)
         second_string = (
-            second_string[:letter_position] + '' + second_string[letter_position+1:])
+            second_string[:letter_position] +
+            '' + second_string[letter_position+1:])
     return strings_is_anagram
