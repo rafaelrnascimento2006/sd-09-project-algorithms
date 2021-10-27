@@ -8,7 +8,9 @@ def is_palindrome_recursive(word, low_index, high_index):
         return False
     if word[low_index] != word[high_index]:
         return False
-    if word[low_index] == word[high_index] and low_index != high_index and high_index > 0:
+    if (
+        word[low_index] == word[high_index]) and (
+            low_index != high_index) and (high_index > 0):
         is_palindrome_recursive(word, low_index+1, high_index-1)
     print('é palindromo')
     return True
