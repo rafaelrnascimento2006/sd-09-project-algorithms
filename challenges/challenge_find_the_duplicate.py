@@ -3,7 +3,13 @@ from typing import Counter
 
 def find_duplicate(nums):
     """Retorna o número mais duplicado."""
-    if _validations(nums) is not True:
+    if nums == "" or len(nums) < 2:
+        return False
+
+    if str in nums:
+        return False
+
+    if _is_positive_number(nums) is not True:
         return False
 
     return _count_duplicate(nums)
@@ -24,19 +30,13 @@ def _count_duplicate(nums):
     return rep_count[0]
 
 
-def _validations(nums):
-    if nums == "" or len(nums) < 2:
-        return False
-
-    if str in nums:
-        return False
-
-    """ for num in nums:
+def _is_positive_number(nums):
+    for num in nums:
         try:
             if num < 1:
                 return False
         except TypeError:
-            return False """
+            return False
 
     return True
 
