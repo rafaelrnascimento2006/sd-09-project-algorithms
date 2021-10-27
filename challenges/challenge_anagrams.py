@@ -6,6 +6,7 @@ def is_anagram(first_string, second_string):
         fstlist=list(first_string)
         sndlist=list(second_string)
         # https://panda.ime.usp.br/panda/static/pythonds_pt/05-OrdenacaoBusca/OBubbleSort.html
+        # aproveitando que o python já entende o código ASCII para ordernar alfabeticamente
         for each_letter in range(len(fstlist)-1,0,-1):
             for i in range(each_letter):
                 if fstlist[i]>fstlist[i+1]:
