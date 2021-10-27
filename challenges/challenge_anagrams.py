@@ -46,4 +46,3 @@ def is_anagram(first_string, second_string):
 
 if __name__ == "__main__":
     print(is_anagram('pedra', ''))
-
