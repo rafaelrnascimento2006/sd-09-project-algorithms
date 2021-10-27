@@ -1,2 +1,10 @@
 def is_anagram(first_string, second_string):
-    """ Faça o código aqui. """
+
+    if second_string == first_string:
+        return True
+
+    if second_string != first_string:
+        return False
+
+    if second_string == '' or first_string == '':
+        return False
