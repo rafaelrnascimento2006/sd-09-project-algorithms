@@ -3,25 +3,17 @@ def is_anagram(first_string, second_string):
     if (first_string or second_string) in (None, ''):
         return False
     else:
-        fstlist=list(first_string)
-        sndlist=list(second_string)
-        # https://panda.ime.usp.br/panda/static/pythonds_pt/05-OrdenacaoBusca/OBubbleSort.html
-        # aproveitando que o python já entende o código ASCII para ordernar alfabeticamente
-        def shortBubbleSort(thelist):
-            letter_will_move = True
-            all_letters = len(thelist)-1
-            while all_letters > 0 and letter_will_move:
-                letter_will_move = False
-                for letter_index in range(all_letters):
-                    if thelist[letter_index]>thelist[letter_index+1]:
-                        letter_will_move = True
-                        temp = thelist[letter_index]
-                        thelist[letter_index] = thelist[letter_index+1]
-                        thelist[letter_index+1] = temp
-                all_letters = all_letters-1
-            all_letters = len(thelist)-1
-        
-    shortBubbleSort(fstlist)
-    shortBubbleSort(sndlist)
+        # já que o bubbleSort não deu certo...
+        """
+        url longa: https://stackoverflow.com/questions/48217471/
+        is-it-possible-to-check-for-anagram-without-using-sorted-or-dictionary-that-pe
+        """
+        def build_counters(string):
+            counter = {}
+            for letter_index in string:
+                counter[letter_index] = counter.setdefault(letter_index, 0) + 1
+            return counter
+    fsthash = build_counters(first_string)
+    sndhash = build_counters(second_string)
 
-    return fstlist == sndlist
+    return fsthash == sndhash
