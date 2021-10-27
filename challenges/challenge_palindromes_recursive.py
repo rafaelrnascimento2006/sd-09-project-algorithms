@@ -1,4 +1,6 @@
 def is_palindrome_recursive(word, low_index, high_index):
+    # algoritmo adaptado com base na solução apresentada em
+    # https://youtu.be/WPSeyjX1-4s?t=1752
     if not(word):
         return False
     if high_index - low_index < 1:
