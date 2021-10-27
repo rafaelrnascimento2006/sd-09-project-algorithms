@@ -3,6 +3,7 @@ def is_palidrome_and_is_not_empty(word, is_palidrome):
         return True
     return False
 
+
 def is_palindrome_recursive(word, low_index, high_index):
     is_palidrome = True
     if low_index < len(word) and high_index < len(word):
@@ -13,7 +14,6 @@ def is_palindrome_recursive(word, low_index, high_index):
         else:
             if word[low_index] != word[high_index] or len(word) == 0:
                 is_palidrome = False
-
 
     return is_palidrome_and_is_not_empty(word, is_palidrome)
 
