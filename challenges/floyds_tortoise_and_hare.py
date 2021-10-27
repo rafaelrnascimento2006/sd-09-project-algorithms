@@ -12,4 +12,4 @@ def floyds_tortoise_and_hare(nums):
         tortoise = nums[tortoise]
         hare = nums[hare]
 
-    return tortoise
+    return tortoise if tortoise >= 0 else False
