@@ -1,13 +1,11 @@
 def find_duplicate(nums):
-    if not nums or len(nums) == 1:
-        return False
-
-    for index_one, number in enumerate(nums):
-        if type(number) == str or number < 0:
+    for index_one, primary_number in enumerate(nums):
+        if type(primary_number) == str or primary_number < 0:
             return False
 
-        for index_two in range(index_one + 1, len(nums)):
-            if nums[index_one] == nums[index_two]:
+        for index_two, secondary_number in enumerate(nums):
+            # "index_one != index_two" pra não comparar com o próprio elemento
+            if primary_number == secondary_number and index_one != index_two:
                 return nums[index_two]
 
     return False
