@@ -1,10 +1,10 @@
-def find_duplicate(list_of_numbers):
-    if len(list_of_numbers) == 1:
+def find_duplicate(list_of_nums):
+    if len(list_of_nums) == 1:
         return False
-    for index in range(len(list_of_numbers) - 1):
-        if isinstance(list_of_numbers[index], str) or list_of_numbers[index] < 0:
+    for index in range(len(list_of_nums) - 1):
+        if isinstance(list_of_nums[index], str) or list_of_nums[index] < 0:
             return False
-    return sort_and_find_duplicate(list_of_numbers)
+    return sort_and_find_duplicate(list_of_nums)
 
 
 def sort_and_find_duplicate(nums):
