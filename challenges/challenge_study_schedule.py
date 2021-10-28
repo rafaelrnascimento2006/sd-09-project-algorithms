@@ -1,3 +1,9 @@
+def validate_inputs(beginning, end, time):
+    if beginning == None or end == None or time == None:
+        return False
+    return True
+
+
 def study_schedule(permanence_period, target_time):
     """
     INPUT:
@@ -20,11 +26,9 @@ def study_schedule(permanence_period, target_time):
     counter = 0
 
     for student in permanence_period:
+        if not validate_inputs(student[0], student[1], target_time):
+            return None
         if target_time >= student[0] and target_time <= student[1]:
             counter += 1
-    
-    print('\n==========  DEBUG  ==========')
-    print(f'\n  [counter] > {counter}')
-    print('\n=============================')
 
     return counter
