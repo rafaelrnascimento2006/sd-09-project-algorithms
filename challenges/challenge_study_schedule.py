@@ -1,3 +1,6 @@
+# import timeit
+
+
 def study_schedule(permanence_period, target_time):
     """(n) percorrer uma única vez
     Validações se vem entrada vazia no target_time
@@ -8,24 +11,31 @@ def study_schedule(permanence_period, target_time):
     3º passo -> Percorrer o array
     Faz a comparação da posição 0 e 1 de cada item
     if o valor esta dentro daquele periodo
-    ele soma
-    exemplo( 1,5)
-    target_time = 3
-    if (inicial[0] >= target_time) && (final[1] <= target_time)
-    if (inicial[0] <= target_time <= final[])
+    ele soma 1
     """
-    if target_time is None or type(target_time) is not int:
+    if type(target_time) is not int:
         return None
     qtd_students = 0
     for item in permanence_period:
-        if (item[0] is None or item[1] is None) or (
-            type(item[0]) is not int or type(item[1]) is not int
-        ):
+        if type(item[0]) is not int or type(item[1]) is not int:
             qtd_students = None
             break
-        if item[0] <= target_time <= item[1]:
+        elif item[0] <= target_time <= item[1]:
             qtd_students += 1
     return qtd_students
+
+
+"""
+setup_import = (
+    "from challenges.challenge_study_schedule " "import study_schedule"
+)
+time = timeit.timeit(
+    "(study_schedule([(2, 2), (1, 2), (2, 3), (1, 5), (4, 4), (4, 5)], 4))",
+    setup=f"{setup_import}",
+    number=10000,
+)
+print(time)
+"""
 
 
 # print(study_schedule([(2, 2), (1, 2), (2, 3), (1, 5), (4, 4), (4, 5)], 4))
