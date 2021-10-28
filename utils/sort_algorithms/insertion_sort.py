@@ -1,12 +1,12 @@
-def insertion_sort(array):
-    for i in range(len(array)):
-        current_value = array[i]
-        current_position = i
+def insertion_sort(list):
+    for index in range(len(list)):
+        curr_value = list[index]
+        curr_position = index
         while (
-            current_position > 0
-            and array[current_position - 1] > current_value
+            curr_position > 0
+            and list[curr_position - 1] > curr_value
         ):
-            array[current_position] = array[current_position - 1]
-            current_position = current_position - 1
-        array[current_position] = current_value
-    return array
+            list[curr_position] = list[curr_position - 1]
+            curr_position = curr_position - 1
+        list[curr_position] = curr_value
+    return list

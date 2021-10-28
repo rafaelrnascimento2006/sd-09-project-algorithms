@@ -1,9 +1,9 @@
-def merge_sort(array):
-    if len(array) <= 1:
-        return array
-    mid = len(array) // 2
-    left, right = merge_sort(array[:mid]), merge_sort(array[mid:])
-    return merge(left, right, array.copy())
+def merge_sort(list):
+    if len(list) <= 1:
+        return list
+    mid = len(list) // 2
+    left, right = merge_sort(list[:mid]), merge_sort(list[mid:])
+    return merge(left, right, list.copy())
 
 
 def merge(left, right, merged):

@@ -1,5 +1,5 @@
-def search(array, value):
-    for index, element in enumerate(array):
-        if element == value:
+def search(list, value):
+    for index, item in enumerate(list):
+        if item == value:
             return index
     return -1
