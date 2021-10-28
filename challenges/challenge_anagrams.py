@@ -6,6 +6,7 @@ def merge_sort(list):
     left, right = merge_sort(list[:mid]), merge_sort(list[mid:])
     return merge(left, right, list.copy())
 
+
 def merge(left, right, list_merged):
     left_cursor, right_cursor = 0, 0
     while left_cursor < len(left) and right_cursor < len(right):
@@ -15,12 +16,12 @@ def merge(left, right, list_merged):
         else:
             list_merged[left_cursor + right_cursor] = right[right_cursor]
             right_cursor += 1
-            
+
     for left_cursor in range(left_cursor, len(left)):
-            list_merged[left_cursor + right_cursor] = left[left_cursor]
-    
+        list_merged[left_cursor + right_cursor] = left[left_cursor]
+
     for right_cursor in range(right_cursor, len(right)):
-            list_merged[left_cursor + right_cursor] = right[right_cursor]
+        list_merged[left_cursor + right_cursor] = right[right_cursor]
     return list_merged
 
 
