@@ -1,5 +1,5 @@
 def validate_inputs(beginning, end, time):
-    if beginning == None or end == None or time == None:
+    if not beginning or not end or not time:
         return False
     return True
 
