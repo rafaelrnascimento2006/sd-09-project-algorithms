@@ -10,4 +10,4 @@ def study_schedule(permanence_period, target_time):
   except TypeError:
       return None
 
-print(study_schedule(permanence_period2, 3))
+# print(study_schedule(permanence_period2, 3))
