@@ -13,11 +13,11 @@ def study_schedule(permanence_period, target_time):
     if o valor esta dentro daquele periodo
     ele soma 1
     """
-    if type(target_time) is not int:
+    if target_time is None:
         return None
     qtd_students = 0
     for item in permanence_period:
-        if type(item[0]) is not int or type(item[1]) is not int:
+        if item[0] is None or item[1] is None:
             qtd_students = None
             break
         elif item[0] <= target_time <= item[1]:
