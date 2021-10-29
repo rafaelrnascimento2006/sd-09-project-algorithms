@@ -36,9 +36,11 @@ teste(permanence_period, 4)
 def is_palindrome_recursive(word, low_index, high_index):
     if word == "":
         return False
-    if word[::-1] == word:
+    if word[::-1] != word:
+        return False
+    elif word[0] == word[-1]:
         return True
-    return False
+    return is_palindrome_recursive(word, low_index, high_index)
 
 
 wrd = "reviver"
