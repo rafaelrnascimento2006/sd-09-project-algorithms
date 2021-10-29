@@ -1,4 +1,4 @@
-niners = [40, 42, 9, 17, 27]
+""" niners = [40, 42, 9, 17, 27]
 
 
 def inversao(niners):
@@ -29,3 +29,17 @@ def teste(permanence_period, target_time):
 
 
 teste(permanence_period, 4)
+ """
+
+
+def is_palindrome_recursive(word, low_index, high_index):
+    if word == "":
+        return False
+    if word[high_index] == word[low_index]:
+        return True
+    return False
+
+
+wrd = "ana"
+
+is_palindrome_recursive(wrd, 0, len(wrd)-1)
