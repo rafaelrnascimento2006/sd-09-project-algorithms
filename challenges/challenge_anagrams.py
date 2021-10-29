@@ -7,11 +7,11 @@ def is_anagram(first_string, second_string):
 
     if(sorted_first_string != sorted_second_string):
         return False
-    
+
     return True
 
 
-#Referência: Course
+# Referência: Course
 def merge_sort(string):
     if len(string) <= 1:
         return string

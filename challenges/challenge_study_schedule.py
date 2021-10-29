@@ -9,6 +9,5 @@ def study_schedule(permanence_period, target_time):
             return None
         if (period[0] <= target_time <= period[1]):
             counter += 1
-    
+
     return counter
-    
