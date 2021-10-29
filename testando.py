@@ -17,14 +17,13 @@ permanence_period = [(2, 2), (1, 2), (2, 3), (1, 5), (4, 5), (4, 5)]
 
 
 def teste(permanence_period, target_time):
-    acc = 0
+    if target_time is None:
+        return None
     for index, value in enumerate(permanence_period):
-        temp = list(range(value[0], value[1]+1))
         if None in value:
             return None
-        elif target_time is None:
-            return None
-        if target_time in temp:
+        acc = 0
+        if target_time in list(range(value[0], value[1]+1)):
             acc += 1
     return acc
 
