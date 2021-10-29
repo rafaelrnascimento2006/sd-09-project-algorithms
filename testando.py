@@ -42,6 +42,6 @@ def is_palindrome_recursive(word, low_index, high_index):
     return is_palindrome_recursive(word, low_index + 1, high_index)
 
 
-wrd = "reviver"
+wrd = "yyyyy"
 
-is_palindrome_recursive(wrd, 0, len(wrd)-1)
+print(is_palindrome_recursive(wrd, 0, len(wrd)-1))
