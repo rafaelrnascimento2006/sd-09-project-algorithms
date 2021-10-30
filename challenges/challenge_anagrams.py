@@ -5,9 +5,13 @@ def is_anagram(first_string, second_string):
     if not second_string:
         return False
 
-    reverse_word = first_string[::-1]
+    reverse_first_string = first_string[::-1]
+    reverse_second_string = second_string[::-1]
 
-    if second_string != reverse_word:
+    if second_string != reverse_first_string:
+        return False
+
+    if first_string != reverse_second_string:
         return False
 
     return True
