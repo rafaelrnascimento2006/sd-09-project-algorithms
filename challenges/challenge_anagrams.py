@@ -20,3 +20,5 @@ def is_anagram(first_string, second_string):
     print(f'first word: {first_word}')
     print(f'second word: {second_word}')
     print('\n===================+++=================')
+
+is_anagram('amor', 'roma')
