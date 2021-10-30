@@ -1,8 +1,11 @@
+from challenges.helpers.merge_sort import mergesort
+
+
 def validate_length_or_empty(nums):
     return (len(nums) < 2) or nums is None
 
 
-def validate_is_number_or_min_number(numero):
+def validate_not_number_or_not_positive_number(numero):
     return type(numero) is not int or numero < 1
 
 
@@ -24,16 +27,15 @@ def find_duplicate(nums):
     """
     if validate_length_or_empty(nums):
         return False
-    array_completo = []
-    numero_duplicado = 0
-    for numero in nums:
-        if validate_is_number_or_min_number(numero):
+    mergesort(nums)
+    number_duplicate = 0
+    for index in range(0, len(nums)):
+        if validate_not_number_or_not_positive_number(nums[index]):
             return False
-        if numero not in array_completo:
-            array_completo.append(numero)
-        elif numero != numero_duplicado:
-            numero_duplicado = numero
-    return validate_number_duplicate(numero_duplicado)
+        if nums[index] == nums[index - 1]:
+            number_duplicate = nums[index]
+            return number_duplicate
+    return False
 
 
 # print(find_duplicate([2, 5, 8, 4, 2, 1]))
