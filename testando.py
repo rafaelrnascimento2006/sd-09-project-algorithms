@@ -1,20 +1,16 @@
+def is_anagram(first_string, second_string):
 
-
-def find_duplicate(nums):
-
-    if len(nums) < 2 or type(nums[0]) is str:
+    if len(first_string) != len(second_string):
         return False
-
-    nums.sort()
-    x = False
-    for index in range(len(nums)-1):
-        if nums[index + 1] == nums[index]:
-            return nums[index]
-        x = False
-
-    return x
+    if (
+        first_string[0] == second_string[0]
+        and first_string[-1] == second_string[-1]
+    ):
+        return True
+    return True
 
 
-num = [1, 2]
+f = "xablau"
+s = "balaxu"
 
-print(find_duplicate(num))
+print(is_anagram(f, s))
