@@ -28,22 +28,22 @@ def mergesort(lista, inicio=0, fim=None):
 
 
 def merge(lista, inicio, meio, fim):
-    left = lista[inicio:meio]
+    left = lista[inicio:meio]  # variaveis auxiliares
     right = lista[meio:fim]
-    top_left, top_right = 0, 0
+    index_left, index_right = 0, 0
     for k in range(inicio, fim):
-        if top_left >= len(left):
-            lista[k] = right[top_right]
-            top_right = top_right + 1
-        elif top_right >= len(right):
-            lista[k] = left[top_left]
-            top_left = top_left + 1
-        elif left[top_left] < right[top_right]:
-            lista[k] = left[top_left]
-            top_left = top_left + 1
+        if index_left >= len(left):  # se não existe aquela posição
+            lista[k] = right[index_right]
+            index_right = index_right + 1
+        elif index_right >= len(right):
+            lista[k] = left[index_left]
+            index_left = index_left + 1
+        elif left[index_left] < right[index_right]:
+            lista[k] = left[index_left]
+            index_left = index_left + 1
         else:
-            lista[k] = right[top_right]
-            top_right = top_right + 1
+            lista[k] = right[index_right]
+            index_right = index_right + 1
 
 
 """
