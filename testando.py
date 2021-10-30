@@ -33,19 +33,15 @@ teste(permanence_period, 4)
  """
 
 
-def is_palindrome_recursive(word, low_index, high_index):
+def is_palindrome_iterative(word):
     if word == "":
         return False
-
-    if word[::-1] != word:
-        return False
-
-    if word[low_index] == word[high_index]:
-        return True
-
-    return is_palindrome_recursive(word, low_index, high_index)
+    x = ""
+    for value in word[::-1]:
+        x += value
+    return x == word
 
 
-wrd = "yyyyy"
+wrd = "esse"
 
-print(is_palindrome_recursive(wrd, 0, len(wrd)-1))
+print(is_palindrome_iterative(wrd))
