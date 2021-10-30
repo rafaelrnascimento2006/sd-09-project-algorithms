@@ -1,4 +1,4 @@
-# refazendo código do req3 em face da determinação de não poder pegar lib pronta
+# refazendo código req3 em face da determinação de não poder pegar lib pronta
 # embora haja certa dúvida se o [::1] se encaixaria nisso
 
 def is_anagram(first_string, second_string):
