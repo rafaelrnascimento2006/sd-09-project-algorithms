@@ -34,6 +34,3 @@ def merge_sort(word):
             main_index += 1
 
     return word
-
-# word = list('pato')
-# print(merge_sort(word))
