@@ -1,3 +1,4 @@
+from challenges.is_equal import is_equal
 from challenges.mergesort import merge_sort
 
 
@@ -21,4 +22,14 @@ def is_anagram(first_string, second_string):
     print(f'second word: {second_word}')
     print('\n===================+++=================')
 
-is_anagram('amor', 'roma')
+    return is_equal(first_word, second_word)
+
+""" def test():
+    assert is_anagram('amor', 'roma') == True
+    assert is_anagram('pedra', 'perda') == True
+    assert is_anagram('pato', 'tapo') == True
+    assert is_anagram('coxinha', 'empada') == False
+    print('Tests finished :)')
+
+
+test() """
