@@ -23,14 +23,23 @@ def merge_sort(word):
                 righthalf_index += 1
             main_index += 1
 
-        while lefthalf_index < len(lefthalf):
-            word[main_index] = lefthalf[lefthalf_index]
-            lefthalf_index += 1
-            main_index += 1
-
-        while righthalf_index < len(righthalf):
-            word[main_index] = righthalf[righthalf_index]
-            righthalf_index += 1
-            main_index += 1
+        merge(word, main_index, lefthalf, lefthalf_index)
+        merge(word, main_index, righthalf, righthalf_index)
 
     return word
+
+
+def merge(main, main_index, half, half_index):
+    while half_index < len(half):
+        main[main_index] = half[half_index]
+        half_index += 1
+        main_index += 1
+
+
+def test():
+    assert merge_sort(['r', 'o', 'm', 'a']) == ['a', 'm', 'o', 'r']
+    assert merge_sort(['p', 'a', 't', 'o']) == ['a', 'o', 'p', 't']
+    print('Tests finished :)')
+
+
+test()
