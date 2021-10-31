@@ -6,11 +6,11 @@ def is_equal(a, b):
     return is_equal(a[1:], b[1:])
 
 
-def test():
+""" def test():
     assert is_equal(['a', 'm', 'o', 'r'], ['r', 'o', 'm', 'a']) == False
     assert is_equal(['a', 'm', 'o', 'r'], ['a', 'm', 'o', 'r', 'e']) == False
     assert is_equal(['a', 'm', 'o', 'r'], ['a', 'm', 'o', 'r']) == True
     print('Tests finished :)')
 
 
-test()
+test() """

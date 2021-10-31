@@ -1,6 +1,6 @@
 from challenges.is_equal import is_equal
 from challenges.mergesort import merge_sort
-
+    
 
 """
 INPUT: string, string
