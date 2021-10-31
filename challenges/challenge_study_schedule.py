@@ -7,7 +7,7 @@ def study_schedule(permanence_period, target_time):
         entrance = period[0]
         exit = period[1]
 
-        if type(permanence_period) != tuple:
+        if type(entrance) != int or type(exit) != int:
             return None
 
         if entrance <= target_time <= exit:
