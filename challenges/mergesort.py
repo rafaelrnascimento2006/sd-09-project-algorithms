@@ -14,7 +14,8 @@ def merge_sort(word):
         righthalf_index = 0
         main_index = 0
 
-        while lefthalf_index < len(lefthalf) and righthalf_index < len(righthalf):
+        while lefthalf_index < len(lefthalf) and \
+            righthalf_index < len(righthalf):
             if lefthalf[lefthalf_index] < righthalf[righthalf_index]:
                 word[main_index] = lefthalf[lefthalf_index]
                 lefthalf_index += 1
