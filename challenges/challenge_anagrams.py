@@ -1,6 +1,6 @@
 from challenges.is_equal import is_equal
 from challenges.mergesort import merge_sort
-    
+
 
 """
 INPUT: string, string
@@ -12,11 +12,11 @@ PROCEDURE:
             retorna True se forem iguais (É ANAGRAMA)
             OU False se forem diferentes (NÃO É ANAGRAMA)
 """
-def is_anagram(first_string, second_string):
 
+
+def is_anagram(first_string, second_string):
     first_word = merge_sort(list(first_string))
     second_word = merge_sort(list(second_string))
-
     return is_equal(first_word, second_word)
 
 

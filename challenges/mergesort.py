@@ -10,22 +10,21 @@ def merge_sort(word):
         merge_sort(lefthalf)
         merge_sort(righthalf)
 
-        lefthalf_index = 0
-        righthalf_index = 0
+        left_index = 0
+        right_index = 0
         main_index = 0
 
-        while lefthalf_index < len(lefthalf) and \
-            righthalf_index < len(righthalf):
-            if lefthalf[lefthalf_index] < righthalf[righthalf_index]:
-                word[main_index] = lefthalf[lefthalf_index]
-                lefthalf_index += 1
+        while left_index < len(lefthalf) and right_index < len(righthalf):
+            if lefthalf[left_index] < righthalf[right_index]:
+                word[main_index] = lefthalf[left_index]
+                left_index += 1
             else:
-                word[main_index] = righthalf[righthalf_index]
-                righthalf_index += 1
+                word[main_index] = righthalf[right_index]
+                right_index += 1
             main_index += 1
 
-        merge(word, main_index, lefthalf, lefthalf_index)
-        merge(word, main_index, righthalf, righthalf_index)
+        merge(word, main_index, lefthalf, left_index)
+        merge(word, main_index, righthalf, right_index)
 
     return word
 
