@@ -19,3 +19,5 @@ def quicksort(array):
         menores = [i for i in array[1:] if i <= pivo]
         maiores = [i for i in array[1:] if i > pivo]
         return quicksort(menores) + [pivo] + quicksort(maiores)
+
+# Honestidade Acadêmica: Livro Entendendo Algoritmos, página 83
