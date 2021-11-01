@@ -11,3 +11,5 @@ def is_anagram(first_string, second_string):
     second_word = merge_sort(second_string)
 
     return first_word == second_word
+
+# requisito feito com auxilio do Henrique Elias
