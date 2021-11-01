@@ -1,14 +1,21 @@
 def sort_string(word):
     string = list(word)
     if len(string) <= 1:
+        # retorna a propria string caso seja uma unica letra
         return string
     mid = len(string) // 2
+    # localiza o elemento do meio da string para dividir e conquistar
+    # chama a si mesmo para as duas metades da string
     left, right = sort_string(string[:mid]), sort_string(string[mid:])
 
+    # chama a função auxiliar para unir as duas metades da string
     return merge(left, right, string.copy())
 
+
 def merge(left, right, merged):
+    '''Função auxiliar para realizar o sort da string'''
     left_cursor, right_cursor = 0, 0
+    # seta os valores iniciais de esquerda e direita
     while left_cursor < len(left) and right_cursor < len(right):
         if left[left_cursor] <= right[right_cursor]:
             merged[left_cursor + right_cursor] = left[left_cursor]
@@ -21,7 +28,7 @@ def merge(left, right, merged):
 
     for right_cursor in range(right_cursor, len(right)):
         merged[left_cursor + right_cursor] = right[right_cursor]
-    
+
     return merged
 
 
@@ -33,6 +40,3 @@ def is_anagram(first_string, second_string):
     if string1 == string2:
         return True
     return False
-
-
-print(is_anagram('ovo', 'vos'))
