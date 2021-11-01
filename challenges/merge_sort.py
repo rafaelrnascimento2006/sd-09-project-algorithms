@@ -23,10 +23,7 @@ def merge(left, right, merged):
     for left_cursor in range(left_cursor, len(left)):
         merged[left_cursor + right_cursor] = left[left_cursor]
 
-
     for right_cursor in range(right_cursor, len(right)):
         merged[left_cursor + right_cursor] = right[right_cursor]
 
     return merged
-
-
