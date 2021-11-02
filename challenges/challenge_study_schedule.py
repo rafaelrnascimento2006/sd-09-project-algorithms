@@ -1,9 +1,11 @@
 def study_schedule(permanence_period, target_time):
-    """ Returns amount of items in permanence_period
-    that contains target_time in its interval"""
+    """ Returns the amount of items in permanence_period that contains
+    target_time in its interval or None if any of them has an invalid value"""
+    count = 0
     try:
-        studying_periods = [i for i in permanence_period
-                            if i[0] <= target_time <= i[1]]
+        for start, end in permanence_period:
+            if start <= target_time <= end:
+                count += 1
     except TypeError:
         return None
-    return len(studying_periods)
+    return count
