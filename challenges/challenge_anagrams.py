@@ -5,7 +5,7 @@ def is_anagram(first_string, second_string):
     if len(first_string) != len(second_string):
 
         return False
-    
+ 
     splitWord =[]
 
     for letter in first_string:
@@ -16,5 +16,4 @@ def is_anagram(first_string, second_string):
     if letter in second_string:
             return True
     else:
-            return False   
-
+            return False 
