@@ -5,10 +5,9 @@ def find_duplicate(nums):
 
     if not is_valid_size:
         return is_valid_size
-    
+
     for i in nums:
         if type(i) != int or i < 0:
             return False
-        
-    return 0
 
+    return 0
