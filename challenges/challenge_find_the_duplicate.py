@@ -7,7 +7,8 @@ def find_duplicate(nums):
         return is_valid_size
 
     for i in nums:
-        if type(i) != int or i < 0:
+        is_item_invalid = type(i) != int or i < 0
+        if is_item_invalid:
             return False
 
     return 0
