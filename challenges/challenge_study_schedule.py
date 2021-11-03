@@ -3,7 +3,7 @@ def study_schedule(permanence_period, target_time):
         return None
     counter = 0
     for (start, finish) in permanence_period:
-        if not(start or finish):
+        if not(start and finish):
             return None
         if start <= target_time <= finish:
             counter += 1
