@@ -5,7 +5,7 @@ def study_schedule(permanence_period, target_time):
         return None
     for time_period in permanence_period:
         arrival, departure = time_period
-        if type(entrance) != int or type(exits) != int:
+        if type(arrival) != int or type(departure) != int:
             return None
         if entrance <= target_time <= exits:
             counter += 1
