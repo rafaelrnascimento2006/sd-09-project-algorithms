@@ -19,7 +19,7 @@ def partition(arr, low, high):
     arr[index + 1], arr[high] = arr[high], arr[index + 1]
     return index + 1
 
-# Lógica da seguinte função inspirada do PR: https://github.com/tryber/sd-09-project-algorithms/pull/72/files
+# Lógica da seguinte função inspirada no PR: https://github.com/tryber/sd-09-project-algorithms/pull/72/files
 def is_anagram(first_string, second_string):
     first_str_array = list(first_string)
     second_str_array = list(second_string)
