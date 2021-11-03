@@ -23,22 +23,3 @@ def is_anagram(first_string, second_string):
                 is_the_same_count = False
                 break
     return is_the_same_count
-
-# def contains(letter, string):
-#     return letter in string
-
-
-# def is_anagram(first_string, second_string):
-#     if len(first_string) != len(second_string):
-#         return False
-#     result = True
-#     position = 0
-
-#     while result and position < len(first_string):
-#         if contains(first_string[position], second_string):
-#             result = True
-#             position += 1
-#         else:
-#             result = False
-#             break
-#     return result
