@@ -6,9 +6,19 @@ def find_duplicate(nums):
     if not is_valid_size:
         return is_valid_size
 
-    for i in nums:
-        is_item_invalid = type(i) != int or i < 0
-        if is_item_invalid:
-            return False
+    existing_numbers = []
 
-    return 0
+    for number in nums:
+        is_item_valid = type(number) == int and number >= 0
+
+        if not is_item_valid:
+            return is_item_valid
+
+        is_duplicated = number in existing_numbers
+
+        if is_duplicated:
+            return number
+        else:
+            existing_numbers.append(number)
+
+    return False
